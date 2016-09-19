@@ -17,8 +17,6 @@ void loop() {
   //Serial.println("shaking1");
     if(Serial1.available()>0){
       letter = Serial1.read();
-      Serial.println("TRIGGERED");
-      Serial.println(letter);
     }
     if(ack1 == letter){
       firstShake = 1;
